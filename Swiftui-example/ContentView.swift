@@ -41,12 +41,20 @@ struct ContentView: View {
                         .frame(width: 4, height: 24)
  
                 }.padding(.trailing, 10)
+                
             }
-            
-            
-            RectangleImage().offset(y: -20)
+            ZStack {
+                Rectangle().fill(Color.white)
+                    .cornerRadius(16)
 
-            FormView().offset(y: -20)
+                RectangleImage().offset(y: -300)
+                FormView().offset(y: -20)
+
+            }.frame(width: UIScreen.main.bounds.size.width - 40, height: UIScreen.main.bounds.size.height - 200 )
+            .shadow(radius: 5)
+
+
+            
     
             Spacer()
    

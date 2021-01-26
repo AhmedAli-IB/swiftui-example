@@ -109,6 +109,7 @@
 			children = (
 				605A225D25B71A46000C025B /* AppDelegate.swift */,
 				605A225F25B71A46000C025B /* SceneDelegate.swift */,
+				6011F7C725BF5EAB003B4873 /* Rectangle Image.swift */,
 				605A226125B71A46000C025B /* ContentView.swift */,
 				6011F7CC25BF6293003B4873 /* FormView.swift */,
 				6011F7D125BF6452003B4873 /* Color+Hex.swift */,
@@ -117,7 +118,6 @@
 				605A226B25B71A47000C025B /* Info.plist */,
 				605A226525B71A47000C025B /* Preview Content */,
 				605A229025B72385000C025B /* Card.swift */,
-				6011F7C725BF5EAB003B4873 /* Rectangle Image.swift */,
 			);
 			path = "Swiftui-example";
 			sourceTree = "<group>";

@@ -17,18 +17,24 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fill)
                        
                     HStack {
-                        Image("ic_edit")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        Button(action: {
+                          print("button pressed")
+
+                        }) {
+                            Image("ic_edit")
+                            .renderingMode(.original)
+                        }
                         Spacer()
-                        Image("ic_back-arrow")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        Button(action: {
+                          print("button pressed")
+
+                        }) {
+                            Image("ic_back-arrow")
+                            .renderingMode(.original)
+                        }
                     }.padding()
 
-                } .frame(width: UIScreen.main.bounds.size.width, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }.frame(width: UIScreen.main.bounds.size.width, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 HStack {
                     Text("معلوماتك").font(.headline).foregroundColor(.white)
                     Rectangle().fill(Color.white).cornerRadius(4)
@@ -38,9 +44,9 @@ struct ContentView: View {
             }
             
             
-            RectangleImage() .offset(y: -20)
+            RectangleImage().offset(y: -20)
 
-            FormView()
+            FormView().offset(y: -20)
     
             Spacer()
    

@@ -12,7 +12,16 @@ struct RectangleImage: View {
         VStack {
             Image("ic_avatar-bg")
                 .shadow(radius: 6)
-            Image("ic_edit").offset(y: -20)
+            ZStack {
+                Rectangle().fill(Color(hex: 0x314d6c)).cornerRadius(4)
+                    .frame(width: 30, height: 30)
+                Image("icons8-camera")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+
+            }.offset(y: -24)
+
         }
    
         
